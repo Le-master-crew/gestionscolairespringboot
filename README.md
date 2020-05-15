@@ -29,3 +29,13 @@ Lorsque l'application est lancée aller sur : http://localhost:8080/swagger-ui.h
 
 Pour accéder à l'application en ligne déployée sur Heroku, aller sur : 
 https://gestionscolaire.herokuapp.com/getFormLogin
+
+Technologies utilisés :
+
+- Spring Boot
+- Tomcat
+- JpaRepository
+- Mysql
+- PostGres
+- Heroku
+- Jenkins
