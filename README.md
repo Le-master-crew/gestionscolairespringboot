@@ -28,3 +28,4 @@ Swagger :
 Lorsque l'application est lancée aller sur : http://localhost:8080/swagger-ui.html#/
 
 Pour accéder à l'application en ligne déployée sur Heroku, aller sur : 
+https://gestionscolaire.herokuapp.com/getFormLogin
