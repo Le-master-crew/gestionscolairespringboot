@@ -25,6 +25,6 @@
                 
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
             </form><!-- /form -->
-        
+        <p><a href="/register">here</a> to register.</p>
         </div><!-- /card-container -->
     </div><!-- /container -->

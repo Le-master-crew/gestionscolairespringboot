@@ -97,7 +97,7 @@ public class StaticController {
 	 * 
 	 * @return
 	 */
-	@RequestMapping("/accueil")
+	@RequestMapping( "/accueil")
 	public String accueil() {
 
 		return "accueil";
@@ -115,7 +115,7 @@ public class StaticController {
 			@ApiResponse(code = 401, message = "You are not authorized to view the resource"),
 			@ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
 			@ApiResponse(code = 404, message = "The resource you were trying to reach is not found") })
-	@GetMapping({ "/", "getFormLogin" })
+	@GetMapping({ "/","getFormLogin" })
 	public String home() {
 
 		return "getFormLogin";
@@ -148,6 +148,7 @@ public class StaticController {
 	 */
 	@GetMapping("getFormAjoutEtudiant")
 	public String getFormAjoutEtudiant() {
+		System.out.println("get ajout etudiant ctrl");
 		return "ajouterEtudiant";
 	}
 
@@ -178,6 +179,7 @@ public class StaticController {
 			@RequestParam("telephone") int telephone, @RequestParam("adresse") String adresse,
 			@RequestParam("mail") String mail, @RequestParam("dateNaissance") String dateNaissance, Etudiant etudiant,
 			ModelMap modelMap) {
+		System.out.println("post ajout etudiant ctrl");
 		etudiant.setNom(nom);
 		etudiant.setPrenom(prenom);
 		etudiant.setAdresse(adresse);
